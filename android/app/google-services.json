@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "52474098557",
+    "project_id": "egovernex",
+    "storage_bucket": "egovernex.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:52474098557:android:62c5036cae9edf188c5214",
+        "android_client_info": {
+          "package_name": "com.sangeetha.egovernex"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "52474098557-k99loecnanblup5ap9s7cfckj6mcfhqb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD_1OGYubd-Wb0pFcV3Nx-vqnpXh8ARx1s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "52474098557-k99loecnanblup5ap9s7cfckj6mcfhqb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,4 +1,4 @@
-import 'package:egovernex/Utils/constants.dart';
+
 import 'package:flutter/material.dart';
 
 class TextBox extends StatefulWidget {
@@ -7,7 +7,11 @@ class TextBox extends StatefulWidget {
   final TextEditingController controller;
   final String fieldName;
 
-  TextBox({required this.textInputType, required this.hint, required this.controller, required this.fieldName});
+  TextBox(
+      {required this.textInputType,
+      required this.hint,
+      required this.controller,
+      required this.fieldName});
 
   @override
   _TextBoxState createState() => _TextBoxState();
@@ -20,21 +24,15 @@ class _TextBoxState extends State<TextBox> {
     }
 
     switch (type) {
-      case "year":
-        if (int.parse(value) < 2021 || int.parse(value) > 2031) {
-          return 'Please enter a valid year';
-        }
-        break;
-
       case "password":
         if (value.length < 6) {
           return 'Password should be at least 6 characters';
         }
         break;
 
-      case "register":
-        if (value.length != 8) {
-          return 'Register number should be 8 digits long';
+      case "aadhar":
+        if (value.length != 15) {
+          return 'aadhar number should be 15 digits long';
         }
         break;
 
@@ -76,7 +74,7 @@ class _TextBoxState extends State<TextBox> {
         decoration: InputDecoration(
           isDense: true,
           hintText: widget.hint,
-          hintStyle: TextStyle(color: Colors.white70),
+          hintStyle: TextStyle(color: Colors.black87),
           border: OutlineInputBorder(
             borderRadius: BorderRadius.circular(15.0),
             borderSide: BorderSide(
@@ -95,7 +93,7 @@ class _TextBoxState extends State<TextBox> {
           enabledBorder: OutlineInputBorder(
             borderRadius: BorderRadius.circular(15.0),
             borderSide: BorderSide(
-              color: Color(0xFF54ABD0),
+              color: Colors.green,
               width: 2,
             ),
           ),
@@ -133,7 +131,7 @@ class _ButtonState extends State<Button> {
           child: Container(
             decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(15.0),
-                gradient: LinearGradient(colors: [kBlue, kCyan])),
+                gradient: LinearGradient(colors: [Colors.blue, Colors.cyan])),
             child: Center(
               child: Text(
                 widget.buttonName,
@@ -141,8 +139,7 @@ class _ButtonState extends State<Button> {
                     color: Colors.black87,
                     fontSize: 22.0,
                     fontWeight: FontWeight.bold,
-                    shadows: [Shadow(offset: Offset(1, 1), blurRadius: 2)]
-                ),
+                    shadows: [Shadow(offset: Offset(1, 1), blurRadius: 2)]),
               ),
             ),
           ),

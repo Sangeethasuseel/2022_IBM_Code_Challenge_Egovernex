@@ -1,21 +1,16 @@
 import 'package:egovernex/Pages/login.dart';
-import 'package:egovernex/Utils/constants.dart';
 import 'package:flutter/material.dart';
 
-void main() {
-  runApp(const MyApp());
+void main() async {
+  runApp(MyApp());
 }
 
 class MyApp extends StatelessWidget {
   const MyApp({Key? key}) : super(key: key);
-
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-   return  MaterialApp(
+    return MaterialApp(
       home: Login(),
     );
-
   }
 }
-
