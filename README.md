@@ -15,7 +15,7 @@ Android Project made with Flutter.
 - jaseela2123
 - Mhd-Thoufeek
 
-- [Presentation PDF](https://flutter.dev/docs/get-started/codelab)
+[Presentation PDF](https://github.com/Sangeethasuseel/2022_IBM_Code_Challenge_Egovernex/blob/main/E-governex%20(2)%20(1).pdf)
 
 ### Screenshots
 <img  src="https://github.com/Sangeethasuseel/2022_IBM_Code_Challenge_Egovernex/blob/main/blob/login.jpeg">
