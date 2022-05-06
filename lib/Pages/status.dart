@@ -1,3 +1,4 @@
+import 'package:egovernex/Pages/profilePage.dart';
 import 'package:flutter/material.dart';
 
 class Status extends StatefulWidget {
@@ -13,10 +14,12 @@ class _StatusState extends State<Status> {
         backgroundColor: Colors.deepOrange,
         leading: IconButton(
           padding: EdgeInsets.only(left: 5),
-          icon: Icon(Icons.card_giftcard),
+          icon: Icon(Icons.arrow_back),
           iconSize: 40,
           color: Colors.black54,
-          onPressed: () {},
+          onPressed: () {
+            Navigator.pop(context);
+          },
         ),
         title: Text(
           'EGOVERENX',
@@ -30,11 +33,11 @@ class _StatusState extends State<Status> {
               size: 40,
             ),
             onPressed: () {
-              // Navigator.push(
-              //     context,
-              //     MaterialPageRoute(
-              //       builder: (BuildContext context) => Profile(),
-              //     ));
+              Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (BuildContext context) => ProfilePage(),
+                  ));
             },
           )
         ],
@@ -62,7 +65,7 @@ class _StatusState extends State<Status> {
                             style: TextStyle(
                               color: Colors.black87,
                               fontWeight: FontWeight.w700,
-                              fontSize: 20.0,
+                              fontSize: 15.0,
                             ),
                           ),
                         ),
@@ -72,7 +75,7 @@ class _StatusState extends State<Status> {
                           style: TextStyle(
                             color: Colors.green,
                             fontWeight: FontWeight.w700,
-                            fontSize: 18.0,
+                            fontSize: 15.0,
                           ),
                         )
                       ],
@@ -87,7 +90,7 @@ class _StatusState extends State<Status> {
                             style: TextStyle(
                               color: Colors.black87,
                               fontWeight: FontWeight.w700,
-                              fontSize: 20.0,
+                              fontSize: 15.0,
                             ),
                           ),
                         ),
@@ -97,7 +100,7 @@ class _StatusState extends State<Status> {
                           style: TextStyle(
                             color: Colors.green,
                             fontWeight: FontWeight.w700,
-                            fontSize: 18.0,
+                            fontSize: 15.0,
                           ),
                         )
                       ],
@@ -112,7 +115,7 @@ class _StatusState extends State<Status> {
                             style: TextStyle(
                               color: Colors.black87,
                               fontWeight: FontWeight.w700,
-                              fontSize: 20.0,
+                              fontSize: 15.0,
                             ),
                           ),
                         ),
@@ -122,7 +125,7 @@ class _StatusState extends State<Status> {
                           style: TextStyle(
                             color: Colors.green,
                             fontWeight: FontWeight.w700,
-                            fontSize: 18.0,
+                            fontSize: 15.0,
                           ),
                         )
                       ],

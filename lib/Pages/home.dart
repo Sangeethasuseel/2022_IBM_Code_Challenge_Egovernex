@@ -1,5 +1,6 @@
 import 'package:egovernex/Pages/registration.dart';
 import 'package:egovernex/Pages/status.dart';
+import 'form_page.dart';
 import 'package:flutter/material.dart';
 
 class Home extends StatefulWidget {
@@ -84,7 +85,10 @@ class _HomeState extends State<Home> {
                           shape: RoundedRectangleBorder(
                               borderRadius: BorderRadius.circular(15)),
                           onPressed: () {
-
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(builder: (context) => FormPage()),
+                            );
                           },
                           child: Text(
                             'Pension Application',
