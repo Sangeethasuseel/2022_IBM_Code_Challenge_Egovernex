@@ -11,6 +11,14 @@ application etc) to online is very high.
 The pandemic has increased the death rate of elderly people in India, it is our
 duty to protect them. By preventing them from stepping out to public places
 we will able to reduce the spread of virus to an extent.
+### Personas of the system
+-Senior citizen : Pension Application
+-Patients       : Aadhar Application etc..
+-Disabled       : Aadhar Application etc..
+### Architecture
+-Flutter
+-FireBase
+
 ### Features
 - Login , Registration
 - Application 
